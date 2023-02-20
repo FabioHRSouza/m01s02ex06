@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1{
+    font-size: 85px;
+    margin-left: 55px;
+    color: white;
+}
+
+body {
+    
+    height: 100vh;
+    background-image: url("netWord.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    
+}
+#alertarUsuario{
+    font-size: 75px;
+    color: red;   
+     
+}
+
+
+.button{
+    margin: 200px;
+    
+    
+}
+.button :hover{
+    color: #ffffff;
+    pointer-events: auto;
+    background-color: blue;
+
+
+    </style>
+
+    
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <h1> Modulo01 - Semana02 - Exercício 06</h1>
+            <div class="button">
+                <button onclick="alertaErro()" id="alertarUsuario">Teste a Página</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        const enviar = document.getElementById("alertarUsuario");
+        function alertaErro(){
+        alert("Caro Usuário, infelizmente não há nada para testar, pois a página não está finalizada!");
+        event.preventDefault();
+        };
+    </script>
+</body>
+</html>
